@@ -1,0 +1,12 @@
+@import "settings/colors.css";
+
+@import "elements/slider.css";
+@import "elements/burger.css";
+
+@import "objects/footer/footer.css";
+@import "objects/header/header.css";
+@import "objects/main/main.css";
+
+@import "generic/base.css";
+
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@700&display=swap";

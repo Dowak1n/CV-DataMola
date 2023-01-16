@@ -1,0 +1,5 @@
+:root {
+  --screen-xs-max: 375px;
+  --screen-sm-max: 768px;
+  --screen-md-max: 992px;
+}

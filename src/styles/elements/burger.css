@@ -1,0 +1,78 @@
+.burger-menu-button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.burger-menu-button-line {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-primary-bg);
+  transition: all 0.5s;
+}
+
+.burger-menu-button .burger-menu-button-line:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.burger-menu-button .burger-menu-button-line:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.burger-menu-button.active .burger-menu-button-line:nth-of-type(1) {
+  display: none;
+}
+.burger-menu-button.active .burger-menu-button-line:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+.burger-menu-button.active .burger-menu-button-line:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: var(--color-secondary-bg);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.burger-menu.active {
+  transform: translateX(0);
+}
+
+.burger-menu-item {
+  list-style-type: none;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  padding: 24px;
+}
+
+.burger-menu-item:hover {
+  transition: 0.75s;
+  background-color: aqua;
+}
+
+.burger-menu-ul {
+  margin: 0;
+  padding: 0;
+}
+
+.burger-menu-link {
+  text-decoration: none;
+  color: white;
+}

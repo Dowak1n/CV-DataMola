@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.col-2 {
+  max-width: 15%;
+  flex: 0 0 15%;
+}
+
+.col-4 {
+  max-width: 30%;
+  flex: 0 0 30%;
+}
+
+.col-6 {
+  display: flex;
+  max-width: 50%;
+  flex: 0 0 50%;
+}
+
+.col-8 {
+  max-width: 70%;
+  flex: 0 0 70%;
+}
+
+.col-10 {
+  max-width: 85%;
+  flex: 0 0 85%;
+}
+
+.col-12 {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+@media (max-width: 768px) {
+  .col-6 {
+    display: flex;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}

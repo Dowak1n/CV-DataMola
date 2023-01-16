@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-third-bg);
+  align-items: center;
+  height: 54px;
+  padding: 0 30px;
+}
+
+.header-heading {
+  color: var(--color-primary-font);
+  font-family: Nunito, serif;
+  font-size: 40px;
+}
